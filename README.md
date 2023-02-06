@@ -2,7 +2,11 @@
 
 ### Start Minikube
 ```bash
+  # start minikube
   minikube start
+
+  # Give service an IP address
+  minikube service <service-name>
 ```
 
 ### kubectl Commands
@@ -21,11 +25,15 @@
   kubectl get <resource>
 
   # Edit running deployment
-  kubectl edit deploymentt <deployment-name>
+  kubectl edit deployment <deployment-name>
 
 
   # Debugging
   kubectl logs <pod-name>
   kubectl describe <pod-name>
   kubectl exec -it <pod-name> -- bin/bash
+```
+
+### K8S files
+```yaml
 ```
